@@ -367,6 +367,373 @@
       "artifacts": [
         "console"
       ]
+    },
+    "E:\\hardhat-merkletree-verify\\contracts\\DocumentStore.sol": {
+      "lastModificationDate": 1688865915687,
+      "contentHash": "2e0b6f6926dc9cedee2af80670435e92",
+      "sourceName": "contracts/DocumentStore.sol",
+      "solcConfig": {
+        "version": "0.8.5",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 0
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+        "./IDocumentStoreInterface.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.5"
+      ],
+      "artifacts": [
+        "DocumentStore"
+      ]
+    },
+    "E:\\hardhat-merkletree-verify\\contracts\\IDocumentStoreInterface.sol": {
+      "lastModificationDate": 1688865915687,
+      "contentHash": "5d986f05a925108768bfe29a18df2caf",
+      "sourceName": "contracts/IDocumentStoreInterface.sol",
+      "solcConfig": {
+        "version": "0.8.5",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 0
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.5"
+      ],
+      "artifacts": [
+        "IDocumentStoreInterface"
+      ]
+    },
+    "E:\\hardhat-merkletree-verify\\node_modules\\hardhat\\console.sol": {
+      "lastModificationDate": 1688865919937,
+      "contentHash": "c3ae5f89c4d6fa96060a7b8e1b66352b",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.8.5",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 0
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">= 0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "E:\\hardhat-merkletree-verify\\node_modules\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol": {
+      "lastModificationDate": 1688865917172,
+      "contentHash": "c0a09493c91b16fb4853ab0792a065d9",
+      "sourceName": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.5",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 0
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/ContextUpgradeable.sol",
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "OwnableUpgradeable"
+      ]
+    },
+    "E:\\hardhat-merkletree-verify\\node_modules\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol": {
+      "lastModificationDate": 1688865917269,
+      "contentHash": "33ef277511626ddb506fcfeee5c90c85",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.5",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 0
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ContextUpgradeable"
+      ]
+    },
+    "E:\\hardhat-merkletree-verify\\node_modules\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol": {
+      "lastModificationDate": 1688865917246,
+      "contentHash": "a25965a7bc22ff77f9776450b7d0ab7a",
+      "sourceName": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+      "solcConfig": {
+        "version": "0.8.5",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 0
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/AddressUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.2"
+      ],
+      "artifacts": [
+        "Initializable"
+      ]
+    },
+    "E:\\hardhat-merkletree-verify\\node_modules\\@openzeppelin\\contracts-upgradeable\\utils\\AddressUpgradeable.sol": {
+      "lastModificationDate": 1688865917268,
+      "contentHash": "ea747e382b3c63f302ebbbc5b2eae65d",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.5",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 0
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "AddressUpgradeable"
+      ]
+    },
+    "E:\\hardhat-merkletree-verify\\contracts\\OwnerManagement.sol": {
+      "lastModificationDate": 1688865915687,
+      "contentHash": "8485d0821e47b3b851ded3f41dbed759",
+      "sourceName": "contracts/OwnerManagement.sol",
+      "solcConfig": {
+        "version": "0.8.5",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 0
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./DocumentStore.sol",
+        "./IDocumentStoreInterface.sol",
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.5"
+      ],
+      "artifacts": [
+        "OwnerManagement"
+      ]
+    },
+    "E:\\hardhat-merkletree-verify\\node_modules\\@openzeppelin\\contracts\\access\\Ownable.sol": {
+      "lastModificationDate": 1688865917286,
+      "contentHash": "b8c9ade8b696865d37affed10d8a1510",
+      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.5",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 0
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "E:\\hardhat-merkletree-verify\\node_modules\\@openzeppelin\\contracts\\utils\\Context.sol": {
+      "lastModificationDate": 1688865917385,
+      "contentHash": "e7f98c33ad1d39d8a6661bf0804fae36",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.5",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 0
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
     }
   }
 }

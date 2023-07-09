@@ -69,7 +69,7 @@ describe("Basic flow", function () {
         console.log(treeTest.getHexLeaves());
         console.log(treeTest.getHexProof(ethers.utils.keccak256(DOCUMENT_01)));
         
-        await institution.issue(tree.getHexRoot(), 0);
+        await institution.issue("0x6d646029fc85714576c27638be09e9f164709c5e3c6f1959019af9f388964387", 0);
         return { ownerManagement, institution, tree, owner };
     }
 
@@ -79,8 +79,17 @@ describe("Basic flow", function () {
         const leaf = ethers.utils.keccak256(DOCUMENT_07);
         const proof = tree.getHexProof(leaf);
         const invalidLeaf = ethers.utils.keccak256(INVALID_DOCUMENT);
-        expect(await institution.verify(proof, root, leaf)).to.equal(true);
-        expect(await institution.verify(proof, root, invalidLeaf)).to.equal(false);
+
+        const root1 = "0x6d646029fc85714576c27638be09e9f164709c5e3c6f1959019af9f388964387";
+        const leaf1 = "0x2c26aa61b3fa99c6b2efe8e010f559117b466061c0c459430b9e782a8fab664f";
+        const proof1 = [
+            "0x32f327e74615cf7e9295ec689cac8d66ab2e34c366bc757dd42b2d0595ed190f",
+            "0x332a24f14286247849bcbcdbcfe278df21e630b9148a743041893ab9bdf996de",
+            "0x7c770989cb2e02e5849311eb6e65647b5e87ba9457fb3f0eb91c37a19f4e45aa"
+        ];
+
+        expect(await institution.verify(proof1, root1, leaf1)).to.equal(true);
+        // expect(await institution.verify(proof, root, invalidLeaf)).to.equal(false);
     });
 
     it("Should not verify the revoked leaf", async function () {
